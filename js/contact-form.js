@@ -35,9 +35,10 @@ fetch("https://us12.api.mailchimp.com/3.0/lists/079fa5509e/members", {
     // Check the response status
     if (data.status === "subscribed") {
       // Display success message to user
-      const form = document.querySelector("#contact-form");
-      form.innerHTML = "<p>Thank you for contacting us!</p>";
-    } else {
+      setTimeout(function () {
+        const form = document.querySelector("#contact-form");
+        form.innerHTML = "<p>Thank you for contacting us!</p>";
+      }, 3000); // Change the delay time (in milliseconds) as needed } else {
       throw new Error("Error subscribing to mailing list.");
     }
   })
