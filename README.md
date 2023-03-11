@@ -1,5 +1,3 @@
 # test-website
 
-the best website ever!
-
-another test update
+This will be a test page for the MailChimp API.
